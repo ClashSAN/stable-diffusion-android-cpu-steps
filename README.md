@@ -1,5 +1,5 @@
 # stable-diffusion-android-cpu-steps
-I quantized a couple of onnx models to int8, and found I can use the onnxdiffusers pipeline on android in cpu mode.
+I quantized a couple of onnx models to int8 [with this script](https://github.com/LowinLi/stable-diffusion-streamlit/blob/main/src/stable-diffusion-streamlit/pages/model/quantization.py), and found I can use the onnxdiffusers pipeline on android in cpu mode.
 (the method also works with x64 raspberry pi (rasbian) off the bat, you can also do this with a persistent TailsOS to make it portable)
 
 
