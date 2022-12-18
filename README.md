@@ -15,3 +15,10 @@ I quantized a couple of onnx models to int8 [with this script](https://github.co
 - I get 10-14s/it on snapdragon 865+ with 256x256.
 
 - sd mini int8 onnx model: https://drive.filen.io/f/2d917512-0566-4903-ab55-e3f3415ed18f#MqhCRo5kCbOcaloWuYKlaLTUaDRhUwMd
+
+There is a way to increase the speed: 
+- Qualcomm - https://onnxruntime.ai/docs/execution-providers/SNPE-ExecutionProvider.html
+- Generic Android - https://onnxruntime.ai/docs/execution-providers/NNAPI-ExecutionProvider.html
+
+Int8 works well for < 448x448 dimensions, glitchy picture higher than that size..
+Fp16 onnx model has appeared to use less memory for smaller sizes than fp32 at < 512x512 , but the memory seems similar or increased at 512x512 and the generation time has also increased.
