@@ -22,3 +22,7 @@ There is a way to increase the speed:
 
 Int8 works well for < 448x448 dimensions, glitchy picture higher than that size..
 Fp16 onnx model has appeared to use less memory for smaller sizes than fp32 at < 512x512 , but the memory seems similar or increased at 512x512 and the generation time has also increased.
+
+My phone has 6gb ram and uses 2.5gb ram standby running LineageOS 19 (Android 12).
+You may want to remove some background processes and use a non-bloated controllable OS to ensure you have enough ram for the task.
+I can watch videos and do other things while images are generated in the background.
